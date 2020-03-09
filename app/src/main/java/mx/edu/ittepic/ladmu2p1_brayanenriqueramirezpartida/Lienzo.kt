@@ -15,20 +15,20 @@ class Lienzo(p: MainActivity) : View(p) {
     var puerta = FiguraGeometrica(200, 575, 50, 75)//todo
 
     var casa = FiguraGeometrica(130, 500, 200, 150)//todo
-    var piso = FiguraGeometrica(0, 650, 450, 1)//todo
-    var bolitas1 = FiguraGeometrica(20, 500, 10)
-    var bolitas2 = FiguraGeometrica(20, 510, 10)
+    var piso = FiguraGeometrica(0, 650, 600, 1)//todo
+    var bolitas1 = FiguraGeometrica(30, 488, 25)
+    var bolitas2 = FiguraGeometrica(30, 518, 25)
 
-    var copos = FiguraGeometrica(20, 10, 10)
-    var copos2 = FiguraGeometrica(250, 2, 10)
-    var copos3 = FiguraGeometrica(100, 0, 10)
-    var copos4 = FiguraGeometrica(450, 5, 10)
-    var copos5 = FiguraGeometrica(500, 8, 5)
-    var copos6 = FiguraGeometrica(400, 115, 15)
-    var copos7 = FiguraGeometrica(300, 0, 2)
-    var copos8 = FiguraGeometrica(200, 10, 10)
+    var copos = FiguraGeometrica(20, 1, 10)
+    var copos2 = FiguraGeometrica(50, 10, 10)
+    var copos3 = FiguraGeometrica(80, 20, 10)
+    var copos4 = FiguraGeometrica(110, 30, 10)
+    var copos5 = FiguraGeometrica(200, 40, 5)
+    var copos6 = FiguraGeometrica(230, 10, 15)
+    var copos7 = FiguraGeometrica(300, 20, 15)
+    var copos8 = FiguraGeometrica(400, 30, 10)
 
-    var tronco = FiguraGeometrica(20, 515, 10, 15)
+    var tronco = FiguraGeometrica(15, 540, 30, 70)
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         var paint = Paint()
@@ -129,11 +129,11 @@ class Lienzo(p: MainActivity) : View(p) {
     fun animarNieve() {
         copos.nieve(600)
         copos2.nieve(600)
-        copos3.nieve(600)
+        copos3.nieve(400)
         copos4.nieve(600)
-        copos5.nieve(600)
+        copos5.nieve(800)
         copos6.nieve(600)
-        copos7.nieve(600)
+        copos7.nieve(500)
         copos8.nieve(600)
         invalidate()
 
